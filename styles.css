@@ -62,7 +62,7 @@ button { cursor: pointer; }
 .menu-toggle[aria-expanded='true'] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .menu-toggle[aria-expanded='true'] span:nth-child(2) { opacity: 0; }
 .menu-toggle[aria-expanded='true'] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.mobile-menu { display: none; padding: 12px 24px 24px; border-top: 1px solid var(--slate-200); }
+.mobile-menu { display: none; padding: 12px 24px 24px; border-top: 1px solid var(--slate-200); max-height: calc(100vh - 104px); max-height: calc(100dvh - 104px); overflow-y: auto; overscroll-behavior: contain; }
 .mobile-menu ul { list-style: none; padding: 0; margin: 0 0 18px; }
 .mobile-menu li a { display: block; padding: 10px 0; }
 .mobile-menu > .btn { width: 100%; margin-top: 8px; }
@@ -153,11 +153,14 @@ button { cursor: pointer; }
 .info-card .small { color: var(--slate-600); font-size: .8rem; margin-top: 12px; }
 .form { display: flex; flex-direction: column; gap: 20px; }
 .form-row { display: grid; gap: 20px; }
-.form-row-2 { grid-template-columns: 1fr 1fr; }
+.form-row-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .field { min-width: 0; }
-.field label { display: block; margin-bottom: 7px; font-size: .87rem; font-weight: 600; color: var(--charcoal); }
-.field .opt { font-weight: 400; color: var(--slate-600); }
-.field input, .field select, .field textarea { width: 100%; min-height: 48px; border: 1px solid #b6c2b6; border-radius: 3px; padding: 12px; color: var(--charcoal); background: #fff; font-size: 16px; }
+.form-row > .field { display: flex; flex-direction: column; }
+.form-row > .field > label { flex: 1; }
+.field label { display: flex; flex-direction: column; justify-content: space-between; gap: 4px; margin-bottom: 7px; font-size: .87rem; line-height: 1.45; font-weight: 600; color: var(--charcoal); }
+.field .field-label-text { display: block; }
+.field .opt { display: block; flex: none; font-size: .78rem; line-height: 1.4; font-weight: 400; color: var(--slate-600); }
+.field input, .field select, .field textarea { width: 100%; min-width: 0; max-width: 100%; min-height: 48px; border: 1px solid #b6c2b6; border-radius: 3px; padding: 12px; color: var(--charcoal); background: #fff; font-size: 16px; }
 .field textarea { min-height: 145px; resize: vertical; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--green-700); outline-offset: 2px; }
 .field input::placeholder, .field textarea::placeholder { color: #67736b; }
@@ -177,6 +180,10 @@ button { cursor: pointer; }
 .footer-col p, .footer-col a, .footer-col li { font-size: .82rem; color: var(--slate-700); overflow-wrap: anywhere; }
 .footer-col a:hover { color: var(--green-900); text-decoration: underline; }
 .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid var(--slate-200); padding-top: 22px; color: var(--slate-600); font-size: .73rem; }
+.hero-heading > *, .service-overview > *, .process-line > *, .cta-inner > *, .about-details > *, .detailed-service > *, .work-grid > *, .about-photo-pair > *, .footer-grid > *, .service-row > * { min-width: 0; }
+@media (max-width: 960px) {
+  .split { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+}
 @media (max-width: 1059px) {
   .nav-links, .nav-cta { display: none; }
   .menu-toggle { display: flex; }
@@ -211,6 +218,9 @@ button { cursor: pointer; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-block, .contact-block:first-child { padding: 20px 0; border-top: 1px solid var(--slate-200); }
   .info-cards { grid-template-columns: 1fr; gap: 26px; }
+  .form-row-2 { grid-template-columns: minmax(0, 1fr); }
+  .footer-col li { margin-bottom: 0; }
+  .footer-col li a { display: inline-block; min-height: 44px; padding: 10px 0; }
   .detailed-service { padding: 28px 0; }
   .detailed-service h2 { font-size: 1.55rem; }
 }
@@ -220,5 +230,7 @@ button { cursor: pointer; }
   .footer-grid { gap: 26px; }
   .trust-band-inner { padding: 16px 20px; gap: 8px; }
   .trust-item { flex: 1 1 140px; font-size: .7rem; }
+  .cta-actions { width: 100%; }
+  .cta-actions .btn { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } html { scroll-behavior: auto; } }

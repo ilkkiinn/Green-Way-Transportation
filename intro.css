@@ -1,0 +1,108 @@
+/* Adapted from the supplied TruckLoader: same trailer, cab and wheel silhouette. */
+html.intro-pending { overflow: hidden; }
+.entry-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .18s ease, visibility 0s .18s;
+}
+html.intro-pending .entry-intro {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: none;
+}
+.entry-intro-inner { width: 100%; padding: 28px; text-align: center; }
+.entry-intro-logo { width: clamp(220px, 60vw, 310px); margin: 0 auto 44px; }
+.entry-road {
+  --road-width: min(76vw, 380px);
+  width: var(--road-width);
+  height: 88px;
+  margin: 0 auto 22px;
+  position: relative;
+  overflow: hidden;
+}
+.entry-road::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #d9dfd8;
+}
+.TruckLoader-route {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  width: 150px;
+  height: 40px;
+}
+html.intro-pending .TruckLoader-route { animation: greenway-drive 2s linear infinite; }
+.TruckLoader {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  background: #356a49;
+}
+html.intro-pending .TruckLoader { animation: greenway-put-put .45s ease-in-out infinite; }
+.TruckLoader::before, .TruckLoader::after, .TruckLoader-cab::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #202a23;
+  box-shadow: 0 0 0 1px #202a23;
+}
+.TruckLoader::before { left: 6px; }
+.TruckLoader::after { right: 6px; }
+.TruckLoader-cab {
+  position: absolute;
+  left: -35px;
+  bottom: 0;
+  width: 33px;
+  height: 25px;
+  background: #173b2b;
+  border-radius: 40% 0 4px 4px;
+}
+.TruckLoader-cab::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 15px;
+  top: -15px;
+  right: 0;
+  background: #173b2b;
+  border-radius: 100% 0 0 0;
+}
+.TruckLoader-cab::after { left: 5px; }
+.entry-status { color: #444e47; font-size: .9rem; }
+@keyframes greenway-drive {
+  from { transform: translateX(calc(var(--road-width) + 40px)); }
+  to { transform: translateX(-165px); }
+}
+@keyframes greenway-put-put {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1px); }
+}
+@media (max-height: 500px) {
+  .entry-intro-inner { padding: 16px; }
+  .entry-intro-logo { width: 220px; margin-bottom: 16px; }
+  .entry-road { height: 74px; margin-bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .entry-intro { display: none; transition: none; }
+  html.intro-pending { overflow: auto; }
+  .TruckLoader, .TruckLoader-route { animation: none !important; }
+}

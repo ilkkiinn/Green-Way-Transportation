@@ -9,8 +9,33 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <noscript><style>@media (max-width: 1059px) { .mobile-menu[hidden] { display: block !important; } }</style></noscript>
+<script>
+// Decide before first paint; a missing intro script cannot trap the page.
+(() => {
+  try {
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let seen = false;
+    try { seen = sessionStorage.getItem('greenway-intro-seen-v1') === '1'; } catch (_) {}
+    if (motion.matches || seen) return;
+    const boot = window.greenWayIntro = { started: performance.now(), motion };
+    document.documentElement.classList.add('intro-pending');
+    boot.fallback = setTimeout(() => {
+      if (boot.dismiss) boot.dismiss();
+      else document.documentElement.classList.remove('intro-pending');
+    }, 6000);
+  } catch (_) { document.documentElement.classList.remove('intro-pending'); }
+})();
+</script>
+<style>.entry-intro { visibility: hidden; }</style>
+<link rel="stylesheet" href="intro.css">
 </head>
-<body>
+<body><div class="entry-intro" tabindex="-1" role="dialog" aria-modal="true" aria-label="Preparing the Green Way website">
+  <div class="entry-intro-inner">
+    <img class="entry-intro-logo" src="assets/green-way-logo.svg" width="610" height="235" alt="Green Way Transportation LLC" decoding="async">
+    <div class="entry-road" aria-hidden="true"><div class="TruckLoader-route"><div class="TruckLoader"><div class="TruckLoader-cab"></div></div></div></div>
+    <p class="entry-status" role="status">Getting ready for the road…</p>
+  </div>
+</div>
 <a class="skip-link" href="#main-content">Skip to content</a>
 
 <header class="site-header">
@@ -178,5 +203,6 @@
 </footer>
 
 <script src="main.js" defer></script>
+<script src="intro.js" defer></script>
 </body>
 </html>

@@ -9,8 +9,33 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <noscript><style>@media (max-width: 1059px) { .mobile-menu[hidden] { display: block !important; } }</style></noscript>
+<script>
+// Decide before first paint; a missing intro script cannot trap the page.
+(() => {
+  try {
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let seen = false;
+    try { seen = sessionStorage.getItem('greenway-intro-seen-v1') === '1'; } catch (_) {}
+    if (motion.matches || seen) return;
+    const boot = window.greenWayIntro = { started: performance.now(), motion };
+    document.documentElement.classList.add('intro-pending');
+    boot.fallback = setTimeout(() => {
+      if (boot.dismiss) boot.dismiss();
+      else document.documentElement.classList.remove('intro-pending');
+    }, 6000);
+  } catch (_) { document.documentElement.classList.remove('intro-pending'); }
+})();
+</script>
+<style>.entry-intro { visibility: hidden; }</style>
+<link rel="stylesheet" href="intro.css">
 </head>
-<body>
+<body><div class="entry-intro" tabindex="-1" role="dialog" aria-modal="true" aria-label="Preparing the Green Way website">
+  <div class="entry-intro-inner">
+    <img class="entry-intro-logo" src="assets/green-way-logo.svg" width="610" height="235" alt="Green Way Transportation LLC" decoding="async">
+    <div class="entry-road" aria-hidden="true"><div class="TruckLoader-route"><div class="TruckLoader"><div class="TruckLoader-cab"></div></div></div></div>
+    <p class="entry-status" role="status">Getting ready for the road…</p>
+  </div>
+</div>
 <a class="skip-link" href="#main-content">Skip to content</a>
 
 <header class="site-header">
@@ -76,7 +101,7 @@
             <input type="text" id="name" name="name" required autocomplete="name" maxlength="300">
           </div>
           <div class="field">
-            <label for="company">Company Name <span class="opt">(optional)</span></label>
+            <label for="company"><span class="field-label-text">Company Name</span><span class="opt">(optional)</span></label>
             <input type="text" id="company" name="company" autocomplete="organization" maxlength="300">
           </div>
         </div>
@@ -118,17 +143,17 @@
 
         <div class="form-row form-row-2">
           <div class="field">
-            <label for="weight">Approximate Weight or Dimensions <span class="opt">(optional)</span></label>
+            <label for="weight"><span class="field-label-text">Approximate Weight or Dimensions</span><span class="opt">(optional)</span></label>
             <input type="text" id="weight" name="weight" placeholder="e.g. 80,000 lbs / 40 ft" maxlength="300">
           </div>
           <div class="field">
-            <label for="timing">Pickup Date / Timing <span class="opt">(optional)</span></label>
+            <label for="timing"><span class="field-label-text">Pickup Date / Timing</span><span class="opt">(optional)</span></label>
             <input type="text" id="timing" name="timing" placeholder="ASAP, next week, specific date" maxlength="300">
           </div>
         </div>
 
         <div class="field">
-          <label for="message">Project Details / Message <span class="opt">(optional)</span></label>
+          <label for="message"><span class="field-label-text">Project Details / Message</span><span class="opt">(optional)</span></label>
           <textarea id="message" name="message" placeholder="Anything else we should know — site access, equipment specs, special handling, etc." maxlength="2500"></textarea>
         </div>
 
@@ -181,5 +206,6 @@
 </footer>
 
 <script src="main.js" defer></script>
+<script src="intro.js" defer></script>
 </body>
 </html>
