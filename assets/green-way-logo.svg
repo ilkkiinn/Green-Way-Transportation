@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="190 380 610 235" width="1220" height="470" role="img" aria-labelledby="title desc">
+  <title id="title">Green Way Transportation LLC</title>
+  <desc id="desc">Recreated green truck emblem and custom geometric lettering on a transparent background.</desc>
+  <g id="truck" fill="#5c9e69">
+    <path d="M284 404 L558 401 L561 411 Z"/>
+    <path d="M284 424 L562 420 L567 430 Z"/>
+    <path d="M284 443 L568 440 L572 449 Z"/>
+    <path d="M284 463 L573 458 L578 468 Z"/>
+    <path d="M282 481 L710 476 L713 490 Z"/>
+    <path d="M571 410 C583 417 595 445 583 471 C583 450 577 429 571 410 Z"/>
+    <path d="M584 431 C617 429 647 442 665 458 L654 459 C635 445 611 439 586 440 Z"/>
+    <path d="M647 451 L657 454 L663 481 L651 481 Z"/>
+  </g>
+  <g fill="none" stroke="#5c9e69" stroke-linecap="round" stroke-linejoin="round">
+    <g id="green-way" stroke-width="6.1">
+      <path d="M318 503 H306 Q294 503 294 515 V530 Q294 540 307 540 H328 Q340 540 340 529 V520"/>
+      <path d="M350 540 V521 Q350 512 362 512 H365"/>
+      <path d="M393 540 H385 Q372 540 372 528 V525 Q372 512 385 512 H400 Q412 512 412 524 V528 H374"/>
+      <path d="M443 540 H435 Q422 540 422 528 V525 Q422 512 435 512 H450 Q462 512 462 524 V528 H424"/>
+      <path d="M473 540 V522 Q473 512 484 512 H501 Q512 512 512 522 V540"/>
+      <path d="M536 503 L552 540 L572 504 L591 540 L608 503"/>
+      <path d="M626 512 H635 Q649 512 649 525 V531 Q649 540 636 540 H623 Q610 540 610 530 Q610 521 623 521 H647"/>
+      <path d="M662 513 V529 Q662 540 674 540 H700 M700 513 V540 Q700 550 688 550 H678"/>
+    </g>
+    <g id="transportation-llc" stroke-width="4.6">
+      <path d="M213 558 H244 M231 558 V588"/>
+      <path d="M239 588 V575 Q239 567 251 567"/>
+      <path d="M277 565 H285 Q295 565 295 575 V580 Q295 587 285 587 H269 Q259 587 259 579 Q259 573 269 573 H294"/>
+      <path d="M304 587 V574 Q304 566 314 566 H325 Q334 566 334 574 V587"/>
+      <path d="M355 566 H348 Q340 566 340 573 Q340 578 349 578 H359 Q369 578 369 583 Q369 587 359 587 H340"/>
+      <path d="M377 594 V575 Q377 566 387 566 H398 Q408 566 408 575 V579 Q408 587 398 587 H378"/>
+      <path d="M427 566 H434 Q445 566 445 574 V579 Q445 587 434 587 H425 Q416 587 416 579 V574 Q416 566 427 566 Z"/>
+      <path d="M454 587 V575 Q454 566 466 566"/>
+      <path d="M478 558 V587 M472 566 H490"/>
+      <path d="M515 565 H521 Q531 565 531 575 V580 Q531 587 521 587 H506 Q496 587 496 579 Q496 573 506 573 H530"/>
+      <path d="M544 558 V587 M538 566 H555"/>
+      <path d="M563 567 V587 M563 558 V560"/>
+      <path d="M585 566 H594 Q604 566 604 574 V579 Q604 587 594 587 H584 Q575 587 575 579 V574 Q575 566 585 566 Z"/>
+      <path d="M613 587 V574 Q613 566 623 566 H634 Q644 566 644 574 V587"/>
+      <path d="M666 558 V578 Q666 587 677 587 H699"/>
+      <path d="M709 558 V578 Q709 587 720 587 H740"/>
+      <path d="M780 558 H759 Q747 558 747 569 V578 Q747 587 759 587 H780"/>
+    </g>
+  </g>
+</svg>
