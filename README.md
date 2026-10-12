@@ -4,7 +4,7 @@ Five-page static website: Home, Services, About, Contact, and Request a Quote. F
 
 The right way is the green way.
 
-Green Way offers transportation across the United States. The site uses the supplied official logo and all ten company photographs, with responsive WebP sizes and lazy loading for gallery photos. Photo captions are omitted; descriptive alt text and accessible photo links are retained. The desktop homepage photo retains its original width and uncropped proportions. On phones it uses a taller, full-width frame (230–320 pixels), cropped from the left to keep the truck visible. Styles and scripts use a new asset version to avoid stale browser caches after upload.
+Green Way offers transportation across the United States. The site uses the supplied official logo and all ten company photographs, with responsive WebP sizes and lazy loading for gallery photos. Photo captions are omitted; descriptive alt text and accessible photo links are retained. The desktop homepage photo retains its original width and uncropped proportions. On phones the same original panorama appears immediately beneath the slogan, edge-to-edge and uncropped. Description and contact buttons follow the photo. Desktop keeps the slogan and description side-by-side above the panorama. Styles and scripts use a new asset version to avoid stale browser caches after upload.
 
 The two-second truck intro covers loading of styles, fonts, logos, and eager images. It appears once per tab session when storage is available. Reduced-motion and JavaScript-disabled visitors see the page directly. Escape dismisses it; failed images and loading deadlines are handled safely.
 
