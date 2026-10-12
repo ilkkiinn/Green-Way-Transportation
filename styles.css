@@ -73,6 +73,7 @@ button { cursor: pointer; }
 .hero-intro { max-width: 465px; padding-bottom: 4px; }
 .hero-intro p { margin-bottom: 22px; font-size: 1.02rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-photo { width: 100%; max-width: 1600px; margin: 0 auto; }
 .hero-photo img { width: 100%; height: auto; aspect-ratio: 2023/777; object-fit: contain; background: #dce3df; }
 .hero-photo figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-top: 12px; font-size: .76rem; color: var(--slate-600); }
 .trust-band { border-bottom: 1px solid var(--slate-200); }
