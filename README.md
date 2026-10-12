@@ -14,4 +14,4 @@ Forms validate details and prepare an email draft to Operations.greenwaycarrier@
 
 Validation: local assets, form associations, JavaScript syntax, intro behavior, and menu/form interactions checked. Browser rendering and measured performance still need final review.
 
-Company phone contacts: main 602-919-0893; alternate 480-919-4607. Both are tap-to-call links in the header, mobile menu, contact page, and footer.
+Company phone contacts: main 602-919-0893; alternate +1 (602) 451-3911. Both are tap-to-call links in the header, mobile menu, contact page, and footer.
