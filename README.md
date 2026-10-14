@@ -30,3 +30,5 @@ All three categories are populated: 6 Machinery, 7 Military Equipment, and 5 Gen
 Typography update: Arial / Helvetica system fonts, with no font downloads required. Repeated phone numbers remain reduced. The desktop hero uses a full background with a black fade and a small rightward image offset. Mobile retains the full-width photo below the slogan.
 
 Navigation highlights What We Move on category pages and on index.html#equipment. Home is highlighted on the homepage when no equipment anchor is active. Both desktop and mobile navigation update on hash changes and history restoration.
+
+Approved mobile hero: uses the supplied Machinery photo (WhatsApp Image 2026-10-12 at 21.36.34.jpeg) through a picture source at 760px and below, with text over a bottom black fade. Desktop retains its approved panoramic photo. All decorative arrows are inline SVG paths, not Unicode emoji. Static framing mockups were reviewed; live browser rendering remains unverified.
