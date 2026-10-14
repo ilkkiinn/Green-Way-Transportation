@@ -38,5 +38,99 @@
   "industrial-tank": {
     "uploaded_filename": "WhatsApp Image 2026-10-09 at 10.21.00.jpeg",
     "alt": "Green Way truck hauling a large cylindrical industrial tank on a trailer"
+  },
+  "green-way-hero": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 20.54.10.jpeg",
+    "alt": "Green Way truck and lowboy trailer carrying a secured load"
+  },
+  "military-equipment-01": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.29.33.jpeg",
+    "alt": "Tan military vehicle secured on a lowboy trailer beneath a cloudy sky",
+    "category": "military-equipment"
+  },
+  "military-equipment-02": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.29.32 (2).jpeg",
+    "alt": "Silver truck hauling a tracked military vehicle on a lowboy trailer",
+    "category": "military-equipment"
+  },
+  "military-equipment-03": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.29.32.jpeg",
+    "alt": "Front view of a tan military vehicle loaded on a trailer at a loading site",
+    "category": "military-equipment"
+  },
+  "military-equipment-04": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.29.33 (1).jpeg",
+    "alt": "Dark military vehicles secured on a lowboy trailer behind a white truck",
+    "category": "military-equipment"
+  },
+  "military-equipment-05": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.40.49.jpeg",
+    "alt": "Silver Green Way truck with a tan military vehicle on its trailer",
+    "category": "military-equipment"
+  },
+  "military-equipment-06": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.40.25.jpeg",
+    "alt": "Silver truck and trailer carrying military equipment at a staging area",
+    "category": "military-equipment"
+  },
+  "military-equipment-07": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.29.32 (1).jpeg",
+    "alt": "Side view of a silver truck and tracked military vehicle on a trailer",
+    "category": "military-equipment"
+  },
+  "machinery-01": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.33.38 (1).jpeg",
+    "alt": "Silver truck hauling a Komatsu excavator on a lowboy trailer beside a wooded road",
+    "category": "machinery"
+  },
+  "machinery-02": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.33.37 (1).jpeg",
+    "alt": "Yellow mobile crane secured on a long lowboy trailer behind a white truck",
+    "category": "machinery"
+  },
+  "machinery-03": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.33.37.jpeg",
+    "alt": "Yellow tracked grinder secured on a lowboy trailer beside a road",
+    "category": "machinery"
+  },
+  "machinery-04": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.33.38 (2).jpeg",
+    "alt": "Silver truck hauling a blue mobile crane on a lowboy trailer",
+    "category": "machinery"
+  },
+  "machinery-05": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.33.38.jpeg",
+    "alt": "Silver truck carrying a yellow excavator on a lowboy trailer under a blue sky",
+    "category": "machinery"
+  },
+  "machinery-06": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.36.34.jpeg",
+    "alt": "Silver truck and lowboy trailer carrying construction machinery at a staging area",
+    "category": "machinery"
+  },
+  "power-equipment-01": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.52.44 (1).jpeg",
+    "alt": "Silver truck and lowboy trailer carrying large white power equipment enclosures",
+    "category": "generators-transformers-batteries"
+  },
+  "power-equipment-02": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.52.44.jpeg",
+    "alt": "Large transformer being positioned on a trailer with a crane at an electrical site",
+    "category": "generators-transformers-batteries"
+  },
+  "power-equipment-03": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.55.28.jpeg",
+    "alt": "Crane lifting a transformer onto a lowboy trailer with workers guiding the load",
+    "category": "generators-transformers-batteries"
+  },
+  "power-equipment-04": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.52.44 (2).jpeg",
+    "alt": "Large blue-covered load secured on a lowboy trailer",
+    "category": "generators-transformers-batteries"
+  },
+  "power-equipment-05": {
+    "uploaded_filename": "WhatsApp Image 2026-10-12 at 22.06.56.jpeg",
+    "alt": "Workers preparing a tall transformer for handling at an electrical site",
+    "category": "generators-transformers-batteries"
   }
 }
