@@ -43,11 +43,6 @@
     "uploaded_filename": "WhatsApp Image 2026-10-12 at 20.54.10.jpeg",
     "alt": "Green Way truck and lowboy trailer carrying a secured load"
   },
-  "military-equipment-01": {
-    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.29.33.jpeg",
-    "alt": "Tan military vehicle secured on a lowboy trailer beneath a cloudy sky",
-    "category": "military-equipment"
-  },
   "military-equipment-02": {
     "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.29.32 (2).jpeg",
     "alt": "Silver truck hauling a tracked military vehicle on a lowboy trailer",
@@ -103,11 +98,6 @@
     "alt": "Silver truck carrying a yellow excavator on a lowboy trailer under a blue sky",
     "category": "machinery"
   },
-  "machinery-06": {
-    "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.36.34.jpeg",
-    "alt": "Silver truck and lowboy trailer carrying construction machinery at a staging area",
-    "category": "machinery"
-  },
   "power-equipment-01": {
     "uploaded_filename": "WhatsApp Image 2026-10-12 at 21.52.44 (1).jpeg",
     "alt": "Silver truck and lowboy trailer carrying large white power equipment enclosures",
@@ -132,5 +122,10 @@
     "uploaded_filename": "WhatsApp Image 2026-10-12 at 22.06.56.jpeg",
     "alt": "Workers preparing a tall transformer for handling at an electrical site",
     "category": "generators-transformers-batteries"
+  },
+  "loading-coordination": {
+    "uploaded_filename": "WhatsApp Image 2026-10-15 at 00.57.13 (1).jpeg",
+    "alt": "Crew in high-visibility safety gear coordinating work beside power equipment and a lowboy trailer at a job site",
+    "placement": "services.html#offload"
   }
 }

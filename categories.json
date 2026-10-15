@@ -107,29 +107,6 @@
             "height": 737
           }
         ]
-      },
-      {
-        "id": "machinery-06",
-        "alt": "Silver truck and lowboy trailer carrying construction machinery at a staging area",
-        "src": "assets/machinery-06-1280.webp",
-        "full": "assets/machinery-06-1298.webp",
-        "variants": [
-          {
-            "src": "assets/machinery-06-640.webp",
-            "width": 640,
-            "height": 661
-          },
-          {
-            "src": "assets/machinery-06-1280.webp",
-            "width": 1280,
-            "height": 1321
-          },
-          {
-            "src": "assets/machinery-06-1298.webp",
-            "width": 1298,
-            "height": 1340
-          }
-        ]
       }
     ],
     "cover_photo": "machinery-01"
@@ -138,24 +115,6 @@
     "slug": "military-equipment",
     "name": "Military Equipment",
     "photos": [
-      {
-        "id": "military-equipment-01",
-        "alt": "Tan military vehicle secured on a lowboy trailer beneath a cloudy sky",
-        "src": "assets/military-equipment-01-1024.webp",
-        "full": "assets/military-equipment-01-1024.webp",
-        "variants": [
-          {
-            "src": "assets/military-equipment-01-640.webp",
-            "width": 640,
-            "height": 480
-          },
-          {
-            "src": "assets/military-equipment-01-1024.webp",
-            "width": 1024,
-            "height": 768
-          }
-        ]
-      },
       {
         "id": "military-equipment-02",
         "alt": "Silver truck hauling a tracked military vehicle on a lowboy trailer",
