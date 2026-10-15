@@ -441,3 +441,15 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -.01em; }
 
 /* Match neighboring service photos while retaining the full image in the viewer. */
 .detailed-service#offload .service-photo img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; object-position: center 44%; }
+
+.service-row-more { margin-top: 18px; padding: 24px 0; background: transparent; border-top: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); border-left: 0; border-right: 0; border-radius: 0; }
+.service-row-more:hover { background: transparent; }
+.service-row-more h3 { color: var(--charcoal); }
+
+.service-overview .service-list { min-width: 0; width: 100%; }
+.service-list .service-row-more { width: 100%; min-height: 0; padding: 24px 0; }
+.service-row-more h3 { font-size: 1.1rem; }
+
+
+.service-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) auto; }
+@media (max-width: 1059px) { .service-row { grid-template-columns: minmax(0, 1fr) auto; } }

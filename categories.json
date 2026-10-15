@@ -152,29 +152,6 @@
         ]
       },
       {
-        "id": "military-equipment-04",
-        "alt": "Dark military vehicles secured on a lowboy trailer behind a white truck",
-        "src": "assets/military-equipment-04-1280.webp",
-        "full": "assets/military-equipment-04-1600.webp",
-        "variants": [
-          {
-            "src": "assets/military-equipment-04-640.webp",
-            "width": 640,
-            "height": 429
-          },
-          {
-            "src": "assets/military-equipment-04-1280.webp",
-            "width": 1280,
-            "height": 858
-          },
-          {
-            "src": "assets/military-equipment-04-1600.webp",
-            "width": 1600,
-            "height": 1073
-          }
-        ]
-      },
-      {
         "id": "military-equipment-05",
         "alt": "Silver Green Way truck with a tan military vehicle on its trailer",
         "src": "assets/military-equipment-05-1280.webp",
@@ -243,7 +220,7 @@
   },
   {
     "slug": "generators-transformers-batteries",
-    "name": "Generators, Transformers and Batteries",
+    "name": "Generators, Transformers, Heat Exchangers and Batteries",
     "photos": [
       {
         "id": "power-equipment-01",

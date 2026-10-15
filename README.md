@@ -15,7 +15,7 @@ Package checks cover markup, local file and anchor references, archive integrity
 
 ## October 14: categories and motion
 
-The homepage now links to three separate category pages: Machinery; Military Equipment; Generators, Transformers and Batteries. The Machinery gallery contains five supplied company photos, and Military Equipment contains seven. Generators, Transformers and Batteries contains five supplied company photos. `categories.json` records the exact category names and assigned photo assets; it is a planning manifest, not a runtime gallery loader. Add approved company photos to the corresponding static page’s `.category-gallery` when provided. Do not source photos from the internet.
+The homepage now links to three separate category pages: Machinery; Military Equipment; Generators, Transformers, Heat Exchangers and Batteries. The Machinery gallery contains five supplied company photos, and Military Equipment contains seven. Generators, Transformers, Heat Exchangers and Batteries contains five supplied company photos. `categories.json` records the exact category names and assigned photo assets; it is a planning manifest, not a runtime gallery loader. Add approved company photos to the corresponding static page’s `.category-gallery` when provided. Do not source photos from the internet.
 
 `motion.js` adds one-time scroll reveals with IntersectionObserver. Content remains visible without JavaScript or with reduced motion enabled. Existing content photos gently zoom on fine-pointer hover, with no zoom on touch devices. The main hero and logos do not zoom. No animation libraries or scroll event listeners are used.
 
@@ -25,7 +25,7 @@ Military photos use responsive WebP files, lazy loading, full-photo links, and d
 
 Machinery now includes all six additional supplied photos. Full images remain uncropped in the responsive gallery, with hover zoom and full-photo links.
 
-All three categories are populated: 5 Machinery, 7 Military Equipment, and 5 Generators, Transformers and Batteries photos. Gallery images are supplied by the client; none were sourced online.
+All three categories are populated: 5 Machinery, 7 Military Equipment, and 5 Generators, Transformers, Heat Exchangers and Batteries photos. Gallery images are supplied by the client; none were sourced online.
 
 Typography update: Arial / Helvetica system fonts, with no font downloads required. Repeated phone numbers remain reduced. The desktop hero uses a full background with a black fade and a small rightward image offset. Mobile retains the full-width photo below the slogan.
 
@@ -45,7 +45,7 @@ Services revision: restored all five original service descriptions and photos. T
 
 October 15 readability revision: hero MC, USDOT and Phoenix identifiers increased from 12px to 14px and bold. Footer body increased to 15.2px, headings to 16px, company name to 16.8px, and copyright to 13.6px. The requested Machinery photo was removed from its gallery, responsive phone hero, source manifest and packaged image assets. The phone hero now uses machinery-05; desktop is unchanged.
 
-Removed the requested cloudy-sky military vehicle photo from the Military Equipment gallery, source manifest and all optimized image files. Current gallery totals: 5 Machinery, 6 Military Equipment, 5 Generators, Transformers and Batteries.
+Removed the requested cloudy-sky military vehicle photo from the Military Equipment gallery, source manifest and all optimized image files. Current gallery totals: 5 Machinery, 6 Military Equipment, 5 Generators, Transformers, Heat Exchangers and Batteries.
 
 Equipment & Capabilities now has the supplied Kleemann crusher photo beside its list on desktop and below on mobile. Reuses the existing identical optimized company image, with rounded edges, hover zoom, and same-page image viewer.
 
@@ -60,3 +60,9 @@ Services order: Equipment & Capabilities first with its crusher photo, Planning 
 Final photo styling: all content pages use 12px rounded photo edges. Home page photography and all brand logos are excluded. Hover zoom and photo viewer behavior remain intact.
 
 Services cleanup: removed the standalone wide banner photo. Loading & Offloading displays its job-site photo in a 4:3 landscape crop centered on the equipment and crew. Clicking still opens the complete portrait image in the overlay.
+
+Removed the requested rear-view military transport photograph and all responsive variants. Gallery totals are now 5 Machinery, 5 Military Equipment and 5 Generators, Transformers, Heat Exchangers and Batteries.
+
+Homepage service overview: Heavy Haul Transport and Equipment Transport retained; Equipment & Capabilities and Planning & Coordination replace the Freight & Logistics and Specialized Loads summary rows. A See All Services row links to the full Services page. Full Services page sections are unchanged.
+
+Homepage overview order: Equipment & Capabilities, Planning & Coordination, Heavy Haul Transport, Equipment Transport, then See All Services. The final box fills the same column width as the service rows and has larger text and padding.
