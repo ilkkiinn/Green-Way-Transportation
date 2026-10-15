@@ -356,3 +356,55 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -.01em; }
   .home-hero .hero-actions { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
   .home-hero .hero-actions .btn { padding: 12px 8px; font-size: .8rem; min-height: 50px; gap: 6px; white-space: normal; text-align: center; }
 }
+
+.hero-credentials { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(220,235,215,.28); color: #e1e7e2; font-size: .75rem; line-height: 1.6; }
+.hero-credentials .company-domain { flex-basis: 100%; overflow-wrap: anywhere; }
+.footer-company-name { font-weight: 700; color: var(--green-900); margin-bottom: 4px; }
+.footer-authority { margin-bottom: 14px; }
+.capabilities-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 60px; }
+.capability-group { min-width: 0; border-top: 1px solid var(--slate-200); padding-top: 26px; }
+.capability-group h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 24px; }
+.capability-list { margin: 0; padding-left: 22px; color: var(--slate-700); }
+.capability-list li { padding-left: 5px; margin-bottom: 16px; }
+.capability-list li::marker { color: var(--green-700); }
+.contact-block .contact-email { font-size: 1.05rem; }
+.quote-emails { margin-top: 20px; font-size: .88rem; overflow-wrap: anywhere; }
+.quote-emails p + p { margin-top: 10px; }
+.quote-emails a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 760px) { .capabilities-grid { grid-template-columns: minmax(0, 1fr); gap: 34px; } .hero-credentials { gap: 8px 16px; } }
+
+/* Homepage category covers use only the supplied gallery photographs. */
+.category-grid { gap: 24px; border: 0; }
+.category-card { padding: 0; min-height: 0; width: 100%; border: 1px solid var(--slate-200); background: #fff; }
+.category-card + .category-card { border: 1px solid var(--slate-200); }
+.category-image { display: block; width: 100%; overflow: hidden; background: #e5e8e3; }
+.category-image img { width: 100%; aspect-ratio: 4/3; height: auto; object-fit: cover; }
+.category-card h3 { max-width: none; padding: 24px 24px 0; margin: 0; font-size: clamp(1.4rem, 2vw, 1.65rem); }
+.category-card .category-link { padding: 24px; }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .category-image img { transition: transform .5s ease; }
+  .category-card:hover .category-image img, .category-card:focus-visible .category-image img { transform: scale(1.035); }
+}
+
+/* Frameless gallery photos with softly rounded corners. */
+.category-gallery { gap: 28px; }
+.category-gallery .work-photo { margin: 0; padding: 0; border: 0; border-radius: 12px; background: transparent; box-shadow: none; min-width: 0; }
+.category-gallery .work-photo a { display: block; overflow: hidden; border-radius: 12px; }
+.category-gallery .work-photo img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; background: transparent; }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .category-gallery .work-photo img { transition: transform .5s ease; }
+  .category-gallery .work-photo a:hover img, .category-gallery .work-photo a:focus-visible img { transform: scale(1.035); }
+}
+/* Native dialog keeps focus inside the photo viewer and the page behind it. */
+.photo-viewer { position: fixed; inset: 0; width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: 72px 24px 48px; border: 0; background: transparent; color: #fff; overflow: hidden; }
+.photo-viewer::backdrop { background: rgba(5,12,8,.83); }
+.photo-viewer[open] { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.photo-viewer-stage { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 0; }
+.photo-viewer-image { width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px; }
+.photo-viewer-close { position: absolute; top: max(16px, env(safe-area-inset-top)); right: max(16px, env(safe-area-inset-right)); display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; padding: 12px; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; background: #132019; color: #fff; }
+.photo-viewer-close:hover { background: #294934; }
+.photo-viewer-close svg { width: 24px; height: 24px; }
+.photo-viewer-status { position: absolute; bottom: 14px; left: 20px; right: 20px; text-align: center; color: #fff; font-size: .9rem; }
+.photo-viewer-open { overflow: hidden; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 760px) { .photo-viewer { padding: 76px 12px 48px; } .category-gallery { gap: 24px; } }

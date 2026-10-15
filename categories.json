@@ -131,7 +131,8 @@
           }
         ]
       }
-    ]
+    ],
+    "cover_photo": "machinery-01"
   },
   {
     "slug": "military-equipment",
@@ -278,7 +279,8 @@
           }
         ]
       }
-    ]
+    ],
+    "cover_photo": "military-equipment-02"
   },
   {
     "slug": "generators-transformers-batteries",
@@ -389,6 +391,7 @@
           }
         ]
       }
-    ]
+    ],
+    "cover_photo": "power-equipment-02"
   }
 ]

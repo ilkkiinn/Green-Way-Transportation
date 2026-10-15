@@ -44,7 +44,7 @@ document.querySelectorAll('form[data-form]').forEach((form) => {
     const body = Array.from(new FormData(form), ([key, value]) => {
       return value.toString().trim() ? `${labels[key] || key}: ${value.toString().trim()}` : '';
     }).filter(Boolean).join('\n\n');
-    const mailto = `mailto:Operations.greenwaycarrier@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:greenwaycarrier@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     const result = form.querySelector('.form-result');
     result.replaceChildren();
     const note = document.createElement('span');
