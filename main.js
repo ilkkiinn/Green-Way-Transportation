@@ -44,16 +44,55 @@ document.querySelectorAll('form[data-form]').forEach((form) => {
     const body = Array.from(new FormData(form), ([key, value]) => {
       return value.toString().trim() ? `${labels[key] || key}: ${value.toString().trim()}` : '';
     }).filter(Boolean).join('\n\n');
-    const mailto = `mailto:greenwaycarrier@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const recipient = 'greenwaycarrier@gmail.com';
+    const mailto = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     const result = form.querySelector('.form-result');
     result.replaceChildren();
-    const note = document.createElement('span');
-    note.textContent = 'Your email draft is ready. Send it in your email app to complete your request. Your details will stay here until you leave this page. ';
-    const link = document.createElement('a');
-    link.href = mailto;
-    link.textContent = 'Open email draft again';
-    result.append(note, link);
+    const heading = document.createElement('h3');
+    heading.textContent = 'Your request is ready to send';
+    const note = document.createElement('p');
+    note.textContent = 'Nothing has been sent yet. Choose Gmail or your email app below, then press Send there. You can also copy the request and email it yourself.';
+    const address = document.createElement('p');
+    address.textContent = `To: ${recipient} | Subject: ${subject}`;
+    const draft = document.createElement('textarea');
+    draft.readOnly = true;
+    draft.rows = 10;
+    draft.value = body;
+    draft.setAttribute('aria-label', 'Your complete email request');
+    const actions = document.createElement('div');
+    actions.className = 'draft-actions';
+    const gmailLink = document.createElement('a');
+    gmailLink.href = gmail;
+    gmailLink.target = '_blank';
+    gmailLink.rel = 'noopener noreferrer';
+    gmailLink.className = 'btn btn-primary';
+    gmailLink.textContent = 'Open in Gmail';
+    const appLink = document.createElement('a');
+    appLink.href = mailto;
+    appLink.className = 'btn btn-secondary';
+    appLink.textContent = 'Open email app';
+    const copy = document.createElement('button');
+    copy.type = 'button';
+    copy.className = 'btn btn-secondary';
+    copy.textContent = 'Copy request';
+    const feedback = document.createElement('p');
+    feedback.setAttribute('role', 'status');
+    feedback.setAttribute('aria-live', 'polite');
+    copy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(`To: ${recipient}\nSubject: ${subject}\n\n${body}`);
+        feedback.textContent = 'Request copied. Paste it into your email and send it to greenwaycarrier@gmail.com.';
+      } catch (_) {
+        draft.focus();
+        draft.select();
+        feedback.textContent = 'Select and copy the request above, then email it to greenwaycarrier@gmail.com.';
+      }
+    });
+    actions.append(gmailLink, appLink, copy);
+    result.append(heading, note, address, draft, actions, feedback);
     result.hidden = false;
-    window.location.href = mailto;
+    result.focus({ preventScroll: true });
+    result.scrollIntoView({ block: 'nearest', behavior: 'auto' });
   });
 });

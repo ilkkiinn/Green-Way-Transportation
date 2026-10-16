@@ -8,7 +8,7 @@ Main phone: 602-919-0893. Alternate: (602) 451-3911. Coverage: United States.
 
 For GitHub Pages, upload the contents of this folder to the repository root, including the complete assets folder.
 
-The forms prepare an email draft. The visitor must send it from their email app; this static website does not send or store form submissions automatically.
+The forms show a prepared request on the page with Open in Gmail, Open email app, and Copy request options. The visitor must press Send in their email service; this static website does not send or store form submissions automatically. No email app is launched automatically.
 
 Package checks cover markup, local file and anchor references, archive integrity, and JavaScript syntax. Browser rendering has not been verified in this environment.
 

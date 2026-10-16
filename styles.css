@@ -455,3 +455,10 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -.01em; }
 @media (max-width: 1059px) { .service-row { grid-template-columns: minmax(0, 1fr) auto; } }
 
 .capability-group .capability-quote { display: inline-flex; margin-top: 10px; min-height: 48px; visibility: visible; opacity: 1; }
+
+.form-result h3 { margin-bottom: 12px; font-size: 1.2rem; }
+.form-result p { margin-bottom: 14px; overflow-wrap: anywhere; }
+.form-result textarea { display: block; width: 100%; min-width: 0; max-width: 100%; margin: 16px 0; padding: 12px; border: 1px solid #a9b9a9; border-radius: 4px; font: inherit; font-size: 16px; line-height: 1.5; background: #fff; color: var(--charcoal); resize: vertical; }
+.draft-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.form-result .draft-actions a { text-decoration: none; }
+@media(max-width:520px) { .draft-actions .btn { width: 100%; white-space: normal; } }
