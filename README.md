@@ -4,7 +4,7 @@ Extract the entire ZIP into a new folder, then open index.html. Keep assets, sty
 
 This complete package includes the dark homepage hero with the new supplied photograph fading into black, left-aligned text on desktop, responsive phone layout, all company photographs, the official logo, all five pages, and the two-second truck intro showing “The right way is the green way.”
 
-Main phone: 602-919-0893. Alternate: (602) 451-3911. Coverage: United States.
+Phone: 602-451-3911. Email: greenwaycarrier@gmail.com. Coverage: United States.
 
 For GitHub Pages, upload the contents of this folder to the repository root, including the complete assets folder.
 
@@ -33,7 +33,7 @@ Navigation highlights What We Move on category pages and on index.html#equipment
 
 Mobile hero uses a supplied truck photo through a responsive picture source. Desktop retains its approved panoramic photo. Decorative arrows are inline SVG paths. Live browser rendering remains unverified.
 
-Client copy update (October 15): family-owned company based in Phoenix, Arizona with nationwide service; new Services capability and coordination lists; main phone 602-451-3911, alternate 602-919-0893; main inbox greenwaycarrier@gmail.com and alternate operations.greenwaycarrier@gmail.com. All call actions and form email drafts use the primary contact. Hero shows domain, MC 046854, USDOT 3045309 and Phoenix. Footer includes company name and MC # 046854. No ZIP or publication requested for this revision.
+Client copy update (October 15): family-owned company based in Phoenix, Arizona with nationwide service; new Services capability and coordination lists; phone 602-451-3911; inbox greenwaycarrier@gmail.com. All call actions and form email drafts use the primary contact. Hero shows domain, MC 046854, USDOT 3045309 and Phoenix. Footer includes company name and MC # 046854. No ZIP or publication requested for this revision.
 
 Homepage category cards now include responsive covers selected from each assigned gallery. The full card links to its category, with gentle hover zoom and reduced-motion support. Cover IDs are recorded in categories.json.
 
@@ -66,3 +66,5 @@ Removed the requested rear-view military transport photograph and all responsive
 Homepage service overview: Heavy Haul Transport and Equipment Transport retained; Equipment & Capabilities and Planning & Coordination replace the Freight & Logistics and Specialized Loads summary rows. A See All Services row links to the full Services page. Full Services page sections are unchanged.
 
 Homepage overview order: Equipment & Capabilities, Planning & Coordination, Heavy Haul Transport, Equipment Transport, then See All Services. The final box fills the same column width as the service rows and has larger text and padding.
+
+Contact update (November 18, 2026): removed alternate phone and operations email from every page. Only 602-451-3911 and greenwaycarrier@gmail.com remain as company contact details.
